@@ -1,4 +1,3 @@
 "use strick";
-var age = 25 
-var age = 14        
+var Result = Horizontal*Column    
 console.log(age) 

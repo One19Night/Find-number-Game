@@ -3,10 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Nguyễn Tấn Nguyên">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <script src ="find.js"></scriptt>
+    <h1>Trò chơi tìm số</h1>
+    <h3><b>Luật chơi :</b> Tìm số tăng dần đều cho đến khi kết thúc</h3>
+    <p><b>Người chơi 1 :</b>Nhấn 1 lần click chuột, nếu hợp lệ sẽ hiện màu xanh </p>
+    <p><b>Người chơi 2 :</b> Nhấn Double click chuột, nếu hợp lệ sẽ hiện màu đỏ</p>
+    <label for="Horizontal">Số hàng ngang:</label><br>
+        <form
+            oninput="multiplication.value=parseInt(Horizontal.value)*parseInt(Column.value)">
+            <input Type=number list="Horizontal" min="0" step="10" max= "100" name="Horizontal" size="3">
+            <datalist id="Horizontal">
+              <option value="10">
+              <option value="20">
+              <option value="30">
+              <option value="40">
+              <option value="50">
+              <option value="60">
+              <option value="70">
+              <option value="80">
+              <option value="90">
+              <option value="100">
+            </datalist>
+            <br>
+    <label for="Column">Số cột dọc:</label><br>
+        <form>
+            <input Type=number list="Column" min="0" step="10" max= "100" name="Column" size="3">
+            <datalist id="Column">
+              <option value="10">
+              <option value="20">
+              <option value="30">
+              <option value="40">
+              <option value="50">
+              <option value="60">
+              <option value="70">
+              <option value="80">
+              <option value="90">
+              <option value="100">
+            </datalist>
+            <br><br>
+            <label for="Column">Cần tìm <output name="multiplication" for="Horizontal Column"></output> số để kết thúc trò chơi !</label> 
+          <br><br>
+    <input type = "submit" name = "Bắt đầu">
+    <script src ="find.js"></scriptt> 
 </body>
 </html>
