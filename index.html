@@ -13,41 +13,42 @@
     <p><b>Người chơi 1 :</b>Nhấn 1 lần click chuột, nếu hợp lệ sẽ hiện <span style="color:blue">màu xanh</span></p>
     <p><b>Người chơi 2 :</b> Nhấn Double click chuột, nếu hợp lệ sẽ hiện <span style="color:red">màu đỏ</span></p>
     <label for="Horizontal">Số hàng ngang:</label><br>
-        <form
-            oninput="multiplication.value=parseInt(Horizontal.value)*parseInt(Column.value)">
-            <input style="background:rgba(91, 91, 151, 0.158);border-radius: 4px" Type=number list="Horizontal" min="0" step="10" max= "100" name="Horizontal" size="3">
+        <form id="frm1"
+            oninput="multiplication.value=Horizontal.value*Column.value">
+            <input style="background:rgba(91, 91, 151, 0.158); border-radius: 4px" Type=number list="Horizontal" min="0" step="10" max= "100" name="Horizontal" size="3">
             <datalist id="Horizontal">
-              <option value="10">
-              <option value="20">
-              <option value="30">
-              <option value="40">
-              <option value="50">
-              <option value="60">
-              <option value="70">
-              <option value="80">
-              <option value="90">
-              <option value="100">
+              <option value=10>
+              <option value=20>
+              <option value=30>
+              <option value=40>
+              <option value=50>
+              <option value=60>
+              <option value=70>
+              <option value=80>
+              <option value=90>
+              <option value=100>
             </datalist>
             <br>
     <label for="Column" >Số cột dọc:</label><br>
         <form>
-            <input style="background:rgba(91, 91, 151, 0.158);border-radius: 4px" Type=number list="Column" min="0" step="10" max= "100" name="Column" size="3">
+            <input style="background:rgba(91, 91, 151, 0.158); border-radius: 4px" Type=number list="Column" min="0" step="10" max= "100" name="Column" size="3">
             <datalist id="Column">
-              <option value="10">
-              <option value="20">
-              <option value="30">
-              <option value="40">
-              <option value="50">
-              <option value="60">
-              <option value="70">
-              <option value="80">
-              <option value="90">
-              <option value="100">
+              <option value=10>
+                <option value=20>
+                <option value=30>
+                <option value=40>
+                <option value=50>
+                <option value=60>
+                <option value=70>
+                <option value=80>
+                <option value=90>
+                <option value=100>
             </datalist>
             <br><br>
-            <label for="Column">Cần tìm <output name="multiplication" for="Horizontal Column"></output> số để kết thúc trò chơi !</label> 
+            <label>Cần tìm <output name="multiplication" for="Horizontal Column"></output> số để kết thúc trò chơi !</label>
           <br><br>
-          <input type="button" name="submit" value="Bắt đầu" />
-    <script src ="find.js"></scriptt> 
+          <button onclick ="Send()" type="button">Bắt đầu</button> 
+      <script src="find.js">
+      </script> 
 </body>
 </html>

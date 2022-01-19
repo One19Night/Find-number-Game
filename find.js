@@ -1,9 +1,8 @@
 "use strick";
-import '.index.html'
-var Total = Horizontal*Column 
-var Horizontal = document.getElementById("Horizontal").value;
-var Column = document.getElementById("Column").value;
-console.log(Column)
+// var Total = Horizontal*Column 
+// var Horizontal = document.getElementById("Horizontal").value;
+// var Column = document.getElementById("Column").value;
+// console.log(Column)
 function creatnumber(){
     //tạo mảng 
     for(k=0;k<=total;k++){
